@@ -1,9 +1,33 @@
+@import url("./vars.css");
+
+body {
+  font-family: "Involve";
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--сolor-blue-dark);
+}
+
+.body--scrolled header {
+  background-color: #7dd2fb;
+}
+
 .wrapper {
   min-height: 100%;
   width: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+header {
+  transition: all 0.7s;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .main {
@@ -15,4 +39,63 @@
   height: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.title {
+  font-family: "Pribambas";
+  font-weight: 400;
+  font-size: 65px;
+  letter-spacing: 0.02em;
+}
+
+.button {
+  border-radius: var(--border-radius);
+  background-color: var(--color-red);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 56px;
+  padding: 30px 0;
+}
+
+.header__menu {
+  display: flex;
+  gap: 29px;
+  font-size: 16px;
+}
+
+.header__menu-link {
+  padding: 6px 1px;
+}
+
+.header__contacts {
+  display: flex;
+  gap: 28px;
+}
+
+.header__contacts-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+  font-size: 12px;
+  color: #13335cb3;
+  letter-spacing: 0.5px;
+}
+
+.header__contacts-number {
+  font-size: 20px;
+  color: var(--сolor-blue-dark);
+  letter-spacing: 0;
+}
+
+.header__btn {
+  padding: 14px 55px;
+  font-weight: 600;
+  color: var(--color-white);
 }

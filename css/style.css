@@ -1,3 +1,61 @@
-@import url('./fonts.css');
-@import url('./vars.css');
-@import url('./global.css');
+@import url("./fonts.css");
+@import url("./vars.css");
+@import url("./global.css");
+
+/* Cтили для hero секции */
+/* 
+.hero {
+  background: url(../assets/img/background/hero-bg.png) center center / 100% 100% no-repeat;
+} */
+
+.hero {
+  background: url(../assets/img/background/hero-bg.png) center center / 100%
+    100% no-repeat;
+}
+
+.hero__inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 175px;
+  min-height: 1028px;
+}
+
+.hero__title {
+  font-size: 80px;
+  margin-bottom: 51px;
+}
+
+.hero__title span {
+  color: var(--color-red);
+}
+
+.hero__subtitle {
+  max-width: 853px;
+  margin-bottom: 34px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 51px;
+}
+
+.hero__btn--left,
+.hero__btn--right {
+  border-radius: var(--border-radius);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.hero__btn--left {
+  padding-inline: 67px;
+  color: var(--color-white);
+}
+
+.hero__btn--right {
+  padding-inline: 61px;
+  background-color: var(--color-white);
+  color: var(--color-red);
+}
