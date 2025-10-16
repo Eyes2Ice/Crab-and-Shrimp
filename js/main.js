@@ -1,3 +1,4 @@
+// Видоизменение шапки в зависимости от положения пользователя на странице
 document.addEventListener("DOMContentLoaded", function () {
   const hero = document.querySelector(".hero");
   if (!hero) return;
