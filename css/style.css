@@ -3,11 +3,6 @@
 @import url("./global.css");
 
 /* Cтили для hero секции */
-/* 
-.hero {
-  background: url(../assets/img/background/hero-bg.png) center center / 100% 100% no-repeat;
-} */
-
 .hero {
   background: url(../assets/img/background/hero-bg-1440.webp) center center /
     100% 100% no-repeat;
@@ -70,4 +65,24 @@
   padding-inline: 61px;
   background-color: var(--color-white);
   color: var(--color-red);
+}
+
+/* Cтили для advantages секции */
+.advantages__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 90px;
+}
+
+.advantages__title {
+  color: var(--color-red);
+  margin-bottom: 67px;
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
