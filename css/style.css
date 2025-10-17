@@ -9,8 +9,20 @@
 } */
 
 .hero {
-  background: url(../assets/img/background/hero-bg.webp) center center / 100%
-    100% no-repeat;
+  background: url(../assets/img/background/hero-bg-1440.webp) center center /
+    100% 100% no-repeat;
+}
+
+@media (min-width: 1700px) {
+  .hero {
+    background-image: url(../assets/img/background/hero-bg-1920.webp);
+  }
+}
+
+@media (min-width: 2400px) {
+  .hero {
+    background-image: url(../assets/img/background/hero-bg-2616.webp);
+  }
 }
 
 .hero__inner {
