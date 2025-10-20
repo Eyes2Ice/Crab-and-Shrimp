@@ -53,7 +53,12 @@
                 <a href="tel:89245274609" class="header__contacts-number"
                   >8 (924) 527-46-09
                 </a>
-                Часы работы:10:00–24:00
+                <p>
+                  Часы работы:
+                  <time datetime="10:00">10:00</time>–<time datetime="24:00"
+                    >24:00</time
+                  >
+                </p>
               </div>
               <a href="#" class="header__btn button">Написать в WhatsApp</a>
             </div>
@@ -61,7 +66,7 @@
         </div>
       </header>
       <main>
-        <section class="hero">
+        <section class="main__hero hero">
           <div class="container">
             <div class="hero__inner">
               <h1 class="hero__title title">
@@ -121,7 +126,7 @@
                 <li class="advantages__item advantages__item--blue-light">
                   <div class="advantages__item-body">
                     <h3 class="advantages__item-title">
-                      Доставка по Владивостоку и РФ
+                      Доставка по&nbsp;Владивостоку и РФ
                     </h3>
                     <p class="advantages__item-text">
                       Шок-заморозка сразу после вылова и соблюдение холодовой
@@ -132,7 +137,7 @@
                 <li class="advantages__item advantages__item--red">
                   <div class="advantages__item-body">
                     <h3 class="advantages__item-title">
-                      Бесплатная доставка от [X] кг
+                      Бесплатная доставка от&nbsp;[X] кг
                     </h3>
                     <p class="advantages__item-text">
                       Суммируйте позиции и получайте заказ без доплат по городу.
@@ -148,6 +153,237 @@
                       4.9★ на основе отзывов — реальные оценки и фотографии
                       клиентов.
                     </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="main__catalog catalog">
+          <div class="container">
+            <div class="catalog__inner">
+              <h2 class="catalog__title title">каталог</h2>
+              <div class="catalog__filters filters">
+                <div class="filters__body">
+                  <ul class="filters__option-group">
+                    <!-- Фильтр по цене -->
+                    <!-- <li class="filters__option-item">
+                      <button
+                        class="filters__option-item-btn filter-toggle"
+                        data-filter="price"
+                      >
+                        Цена
+                      </button>
+                      <div class="filter-dropdown" id="price-dropdown">
+                        <div class="price-inputs">
+                          <input
+                            type="number"
+                            id="min-price"
+                            placeholder="Минимальная цена"
+                          />
+                          <span class="price-separator">—</span>
+                          <input
+                            type="number"
+                            id="max-price"
+                            placeholder="Максимальная цена"
+                          />
+                          <button class="apply-filter">ОК</button>
+                        </div>
+                      </div>
+                    </li> -->
+                    <!-- Фильтр по категориям -->
+                    <li class="filters__option-item">
+                      <button class="filter-toggle" data-filter="category">
+                        Разделы:
+                      </button>
+                      <div class="filter-dropdown" id="category-dropdown">
+                        <div class="filter-categories-list">
+                          <label class="filter-checkbox">
+                            <input
+                              type="checkbox"
+                              name="category"
+                              value="caviar"
+                            />
+                            <span class="checkmark"></span>
+                            <span class="filter-checkbox-label">Икра</span>
+                          </label>
+                          <label class="filter-checkbox">
+                            <input
+                              type="checkbox"
+                              name="category"
+                              value="frozen-fish"
+                            />
+                            <span class="checkmark"></span>
+                            <span class="filter-checkbox-label"
+                              >Замороженная рыба</span
+                            >
+                          </label>
+                          <label class="filter-checkbox">
+                            <input
+                              type="checkbox"
+                              name="category"
+                              value="crabs"
+                            />
+                            <span class="checkmark"></span>
+                            <span class="filter-checkbox-label">Крабы</span>
+                          </label>
+                          <label class="filter-checkbox">
+                            <input
+                              type="checkbox"
+                              name="category"
+                              value="shellfish"
+                            />
+                            <span class="checkmark"></span>
+                            <span class="filter-checkbox-label">Моллюски</span>
+                          </label>
+                          <label class="filter-checkbox">
+                            <input
+                              type="checkbox"
+                              name="category"
+                              value="shrimp"
+                            />
+                            <span class="checkmark"></span>
+                            <span class="filter-checkbox-label">Креветки</span>
+                          </label>
+                        </div>
+                      </div>
+                      <!-- Блок выбранных категорий -->
+                      <div class="selected-categories">
+                        <div class="selected-categories-header">
+                          <span>Выбранные разделы:</span>
+                        </div>
+                        <div class="selected-categories-list">
+                          <!-- Здесь будут появляться выбранные категории -->
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="filters__search-group">
+                    <li class="filters__search-item">
+                      <div class="search-filter">
+                        <div class="search-container">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.5 21.75C5.85 21.75 1.25 17.15 1.25 11.5C1.25 5.85 5.85 1.25 11.5 1.25C17.15 1.25 21.75 5.85 21.75 11.5C21.75 17.15 17.15 21.75 11.5 21.75ZM11.5 2.75C6.67 2.75 2.75 6.68 2.75 11.5C2.75 16.32 6.67 20.25 11.5 20.25C16.33 20.25 20.25 16.32 20.25 11.5C20.25 6.68 16.33 2.75 11.5 2.75Z"
+                              fill="#13335C"
+                            />
+                            <path
+                              d="M22 22.7499C21.81 22.7499 21.62 22.6799 21.47 22.5299L19.47 20.5299C19.18 20.2399 19.18 19.7599 19.47 19.4699C19.76 19.1799 20.24 19.1799 20.53 19.4699L22.53 21.4699C22.82 21.7599 22.82 22.2399 22.53 22.5299C22.38 22.6799 22.19 22.7499 22 22.7499Z"
+                              fill="#13335C"
+                            />
+                          </svg>
+                          <input
+                            type="text"
+                            id="product-search"
+                            placeholder="Поиск"
+                            class="search-input"
+                          />
+                          <button
+                            type="button"
+                            class="search-clear"
+                            aria-label="Очистить поиск"
+                          >
+                            ×
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="filters__search-item">
+                      <div class="sort-select-wrapper">
+                        <select class="sort-select" name="sort">
+                          <option value="">Порядок: по умолчанию</option>
+                          <option value="price:asc">
+                            Цена: по возрастанию
+                          </option>
+                          <option value="price:desc">Цена: по убыванию</option>
+                          <option value="title:asc">Название: А-Я</option>
+                          <option value="title:desc">Название: Я-А</option>
+                          <option value="created:desc">
+                            Порядок: сперва новые
+                          </option>
+                          <option value="created:asc">
+                            Порядок: сперва старые
+                          </option>
+                        </select>
+                      </div>
+                    </li>
+                    <!-- <li class="filters__search-item">
+                      <button
+                        type="button"
+                        class="reset-all-filters"
+                        onclick="window.filterManager.resetAllFilters()"
+                      >
+                        Сбросить все фильтры
+                      </button>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+              <ul class="catalog__list catalog-list">
+                <li class="catalog-list__item">
+                  <img
+                    src="./assets/img/photo/honey.png"
+                    class="catalog-list__item-img"
+                    alt=""
+                  />
+                  <div class="catalog-list__item-content">
+                    <h5 class="catalog-list__item-title">Икра ежа на меду</h5>
+                    <i class="catalog-list__item-weight">Вес: 50гр.</i>
+                    <strong class="catalog-list__item-price">5 000 Р</strong>
+                    <div class="catalog-list__item-ordering ordering">
+                      <div class="ordering__controls">
+                        <button class="ordering__controls-more-btn">+</button>
+                        <div class="quantity">0</div>
+                        <button class="ordering__controls-less-btn">-</button>
+                      </div>
+                      <button class="ordering__btn button">Заказать</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-list__item">
+                  <img
+                    src="./assets/img/photo/honey-2.png"
+                    class="catalog-list__item-img"
+                    alt=""
+                  />
+                  <div class="catalog-list__item-content">
+                    <h5 class="catalog-list__item-title">Икра ежа на меду</h5>
+                    <i class="catalog-list__item-weight">Вес: 10гр.</i>
+                    <strong class="catalog-list__item-price">1 000 Р</strong>
+                    <div class="catalog-list__item-ordering ordering">
+                      <div class="ordering__controls">
+                        <button class="ordering__controls-more-btn">+</button>
+                        <div class="quantity">1</div>
+                        <button class="ordering__controls-less-btn">-</button>
+                      </div>
+                      <button class="ordering__btn button">Заказать</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-list__item">
+                  <img
+                    src="./assets/img/photo/caviar-on-bread.png"
+                    class="catalog-list__item-img"
+                    alt=""
+                  />
+                  <div class="catalog-list__item-content">
+                    <h5 class="catalog-list__item-title">Икра кеты</h5>
+                    <i class="catalog-list__item-weight">Вес от 50гр.</i>
+                    <strong class="catalog-list__item-price">5 000 Р</strong>
+                    <div class="catalog-list__item-ordering ordering">
+                      <div class="ordering__controls">
+                        <button class="ordering__controls-more-btn">+</button>
+                        <div class="quantity">0</div>
+                        <button class="ordering__controls-less-btn">-</button>
+                      </div>
+                      <button class="ordering__btn button">Заказать</button>
+                    </div>
                   </div>
                 </li>
               </ul>
