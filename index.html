@@ -194,7 +194,7 @@
                     <!-- Фильтр по категориям -->
                     <li class="filters__option-item">
                       <button class="filter-toggle" data-filter="category">
-                        Разделы:
+                        Разделы: выбрать категорию
                       </button>
                       <div class="filter-dropdown" id="category-dropdown">
                         <div class="filter-categories-list">
@@ -326,7 +326,12 @@
                 </div>
               </div>
               <ul class="catalog__list catalog-list">
-                <li class="catalog-list__item">
+                <li
+                  class="catalog-list__item"
+                  data-category="caviar"
+                  data-price="5000"
+                  data-name="Икра ежа на меду"
+                >
                   <img
                     src="./assets/img/photo/honey.png"
                     class="catalog-list__item-img"
@@ -338,15 +343,20 @@
                     <strong class="catalog-list__item-price">5 000 Р</strong>
                     <div class="catalog-list__item-ordering ordering">
                       <div class="ordering__controls">
-                        <button class="ordering__controls-more-btn">+</button>
+                        <button class="ordering__controls-more-btn">-</button>
                         <div class="quantity">0</div>
-                        <button class="ordering__controls-less-btn">-</button>
+                        <button class="ordering__controls-less-btn">+</button>
                       </div>
                       <button class="ordering__btn button">Заказать</button>
                     </div>
                   </div>
                 </li>
-                <li class="catalog-list__item">
+                <li
+                  class="catalog-list__item"
+                  data-category="frozen-fish"
+                  data-price="1000"
+                  data-name="Икра ежа на меду"
+                >
                   <img
                     src="./assets/img/photo/honey-2.png"
                     class="catalog-list__item-img"
@@ -358,15 +368,20 @@
                     <strong class="catalog-list__item-price">1 000 Р</strong>
                     <div class="catalog-list__item-ordering ordering">
                       <div class="ordering__controls">
-                        <button class="ordering__controls-more-btn">+</button>
+                        <button class="ordering__controls-more-btn">-</button>
                         <div class="quantity">1</div>
-                        <button class="ordering__controls-less-btn">-</button>
+                        <button class="ordering__controls-less-btn">+</button>
                       </div>
                       <button class="ordering__btn button">Заказать</button>
                     </div>
                   </div>
                 </li>
-                <li class="catalog-list__item">
+                <li
+                  class="catalog-list__item"
+                  data-category="shrimp"
+                  data-price="5000"
+                  data-name="Икра кеты"
+                >
                   <img
                     src="./assets/img/photo/caviar-on-bread.png"
                     class="catalog-list__item-img"
@@ -378,9 +393,9 @@
                     <strong class="catalog-list__item-price">5 000 Р</strong>
                     <div class="catalog-list__item-ordering ordering">
                       <div class="ordering__controls">
-                        <button class="ordering__controls-more-btn">+</button>
+                        <button class="ordering__controls-more-btn">-</button>
                         <div class="quantity">0</div>
-                        <button class="ordering__controls-less-btn">-</button>
+                        <button class="ordering__controls-less-btn">+</button>
                       </div>
                       <button class="ordering__btn button">Заказать</button>
                     </div>
@@ -393,6 +408,11 @@
       </main>
       <footer></footer>
     </div>
+    <script src="./js/filter-manager.js"></script>
+    <script src="./js/filter-price.js"></script>
+    <script src="./js/filter-category.js"></script>
+    <script src="./js/filter-search.js"></script>
+    <script src="./js/filter-sort.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

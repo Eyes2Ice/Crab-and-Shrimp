@@ -8,4 +8,7 @@
 
   /* Border radius */
   --border-radius: 5px;
+
+  /* Border */
+  --border: 1px solid var(--сolor-blue-dark);
 }
