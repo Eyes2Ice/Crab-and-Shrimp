@@ -11,4 +11,7 @@
 
   /* Border */
   --border: 1px solid var(--сolor-blue-dark);
+
+  /* Transition */
+  --transition: all 0.5s;
 }

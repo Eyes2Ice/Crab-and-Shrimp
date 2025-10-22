@@ -127,4 +127,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
     activeFilter = null;
   }
+
+  // ================FAQ Accordion=====================
+
+  const accordionLists = document.querySelectorAll(".faq__list");
+
+  accordionLists.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      const accordionList = e.currentTarget;
+      const accordionControl = e.target.closest(".faq__item-control");
+      if (!accordionControl) return;
+      e.preventDefault();
+      const accordionItem = accordionControl.parentElement;
+      const accordionContent = accordionControl.nextElementSibling;
+
+      accordionItem.classList.toggle("faq__item--opened");
+
+      if (accordionItem.classList.contains("faq__item--opened")) {
+        accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+      } else {
+        accordionContent.style.maxHeight = null;
+      }
+    });
+  });
 });
