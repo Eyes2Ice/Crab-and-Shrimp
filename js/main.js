@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
   accordionLists.forEach((el) => {
     el.addEventListener("click", (e) => {
       const accordionList = e.currentTarget;
-      const accordionControl = e.target.closest(".faq__item-control");
+      const accordionControl = e.target.closest(".faq-item__control");
       if (!accordionControl) return;
       e.preventDefault();
       const accordionItem = accordionControl.parentElement;

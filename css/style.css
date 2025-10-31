@@ -44,24 +44,24 @@
   text-align: center;
 }
 
-.hero__buttons {
+.buttons {
   display: flex;
   gap: 51px;
 }
 
-.hero__btn--left,
-.hero__btn--right {
+.buttons__left,
+.buttons__right {
   border-radius: var(--border-radius);
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
-.hero__btn--left {
+.buttons__left {
   padding-inline: 67px;
   color: var(--color-white);
 }
 
-.hero__btn--right {
+.buttons__right {
   padding-inline: 61px;
   background-color: var(--color-white);
   color: var(--color-red);
@@ -129,7 +129,7 @@
   color: var(--color-white);
 }
 
-.advantages__item-body {
+.advantage {
   display: flex;
   gap: 40px;
   flex-direction: column;
@@ -139,7 +139,7 @@
   border: solid 1px var(--color-white);
 }
 
-.advantages__item-title {
+.advantage__title {
   font-family: "Pribambas";
   font-weight: 400;
   font-size: 35px;
@@ -506,31 +506,31 @@
   transform: translateY(0);
 }
 
-.catalog-list__item-img {
+.product__img {
   width: 100%;
   max-height: 289px;
   margin-bottom: 22px;
   border-radius: var(--border-radius);
 }
 
-.catalog-list__item-content {
+.product__content {
   display: flex;
   flex-direction: column;
   padding: 0 26px 36px 26px;
 }
 
-.catalog-list__item-title {
+.product__title {
   margin-bottom: 25px;
 }
 
-.catalog-list__item-weight {
+.product__weight {
   margin-bottom: 55px;
   font-style: normal;
   font-weight: 400;
   color: #737373;
 }
 
-.catalog-list__item-price {
+.product__price {
   margin-bottom: 25px;
   font-family: "Ponter Rounded";
   font-weight: 400;
@@ -538,7 +538,7 @@
   color: var(--color-red);
 }
 
-.catalog-list__item-ordering {
+.product__ordering {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -601,7 +601,7 @@
   overflow: hidden;
 }
 
-.assortment__item-title {
+.assortment-item__title {
   position: absolute;
   top: 18px;
   left: 18px;
@@ -749,7 +749,7 @@
   border-radius: var(--border-radius);
 }
 
-.delivery__img-body {
+.delivery__img {
   position: absolute;
   top: -15%;
   left: 50%;
@@ -765,14 +765,14 @@
   border-radius: 50%;
 }
 
-.delivery__item-title {
+.delivery-item__title {
   margin-bottom: 29px;
   font-family: "Pribambas";
   font-weight: 400;
   font-size: 35px;
 }
 
-.delivery__item-text {
+.delivery-item__text {
   font-weight: 400;
 }
 
@@ -805,7 +805,7 @@
   transition: var(--transition);
 }
 
-.faq__item-control {
+.faq-item__control {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -813,7 +813,7 @@
   transition: var(--transition);
 }
 
-.faq__item-control svg {
+.faq-item__control svg {
   transition: var(--transition);
 }
 
@@ -821,15 +821,15 @@
   padding-bottom: 23px;
 }
 
-.faq__item--opened .faq__item-control {
+.faq__item--opened .faq-item__control {
   margin-bottom: 0;
 }
 
-.faq__item--opened .faq__item-control svg {
+.faq__item--opened .faq-item__control svg {
   transform: rotate(45deg);
 }
 
-.faq__item-content {
+.faq-item__content {
   max-height: 0;
   overflow: hidden;
   transition: var(--transition);

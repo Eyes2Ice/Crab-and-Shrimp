@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
     <title>Краб и Креветка</title>
 
     <link rel="stylesheet" href="./css/reset.css" />
@@ -14,9 +17,9 @@
       <header>
         <div class="container">
           <div class="header__inner">
-            <menu class="header__menu">
-              <li class="header__menu-item">
-                <a href="#" class="header__menu-link">
+            <menu class="header__menu menu">
+              <li class="menu__item">
+                <a href="#" class="menu__link">
                   Каталог
                   <svg
                     width="10"
@@ -32,37 +35,37 @@
                   </svg>
                 </a>
               </li>
-              <li class="header__menu-item">
-                <a href="#" class="header__menu-link">Доставка</a>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Доставка</a>
               </li>
-              <li class="header__menu-item">
-                <a href="#" class="header__menu-link">Магазины</a>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Магазины</a>
               </li>
-              <li class="header__menu-item">
-                <a href="#" class="header__menu-link">Отзывы</a>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Отзывы</a>
               </li>
-              <li class="header__menu-item">
-                <a href="#" class="header__menu-link">Контакты</a>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Контакты</a>
               </li>
-              <li class="header__menu-item">
-                <a href="#" class="header__menu-link">FAQ</a>
+              <li class="menu__item">
+                <a href="#" class="menu__link">FAQ</a>
               </li>
             </menu>
-            <div class="header__contacts contacts">
-              <div class="header__contacts-info">
-                <a href="tel:89245274609" class="header__contacts-number"
+            <address class="header__contacts contacts">
+              <div class="contacts__info">
+                <a href="tel:89245274609" class="contacts__number"
                   >8 (924) 527-46-09
                 </a>
                 <p>
                   Часы работы:
                   <time datetime="10:00+10:00">10:00</time>–<time
-                    datetime="24:00+10:00"
+                    datetime="00:00+10:00"
                     >24:00</time
                   >
                 </p>
               </div>
               <a href="#" class="header__btn button">Написать в WhatsApp</a>
-            </div>
+            </address>
           </div>
         </div>
       </header>
@@ -77,9 +80,9 @@
                 Свежие морепродукты c доставкой по Владивостоку
                 и&nbsp;авиа-доставкой в Москву
               </p>
-              <div class="hero__buttons">
-                <a href="#" class="hero__btn--left button">Открыть каталог</a>
-                <a href="#" class="hero__btn--right button"
+              <div class="hero__buttons buttons">
+                <a href="#" class="buttons__left button">Открыть каталог</a>
+                <a href="#" class="buttons__right button"
                   >Уточнить наличие в WhatsApp</a
                 >
               </div>
@@ -94,63 +97,57 @@
               </h2>
               <ul class="advantages__list">
                 <li class="advantages__item advantages__item--blue-dark">
-                  <div class="advantages__item-body">
-                    <h3 class="advantages__item-title">
-                      Свежесть под контролем
-                    </h3>
-                    <p class="advantages__item-text">
+                  <div class="advantage">
+                    <h3 class="advantage__title">Свежесть под контролем</h3>
+                    <p class="advantage__text">
                       Шок-заморозка сразу после вылова и соблюдение холодовой
                       цепи до вашей двери.
                     </p>
                   </div>
                 </li>
                 <li class="advantages__item advantages__item--blue-light">
-                  <div class="advantages__item-body">
-                    <h3 class="advantages__item-title">
-                      Надёжная термоупаковка
-                    </h3>
-                    <p class="advantages__item-text">
+                  <div class="advantage">
+                    <h3 class="advantage__title">Надёжная термоупаковка</h3>
+                    <p class="advantage__text">
                       Термокороб и хладоэлементы сохраняют продукт в нужном
                       режиме во время доставки.
                     </p>
                   </div>
                 </li>
                 <li class="advantages__item advantages__item--blue-dark">
-                  <div class="advantages__item-body">
-                    <h3 class="advantages__item-title">Прямые поставки</h3>
-                    <p class="advantages__item-text">
+                  <div class="advantage">
+                    <h3 class="advantage__title">Прямые поставки</h3>
+                    <p class="advantage__text">
                       Работаем без лишних посредников — стабильное качество и
                       честная цена.
                     </p>
                   </div>
                 </li>
                 <li class="advantages__item advantages__item--blue-light">
-                  <div class="advantages__item-body">
-                    <h3 class="advantages__item-title">
+                  <div class="advantage">
+                    <h3 class="advantage__title">
                       Доставка по&nbsp;Владивостоку и РФ
                     </h3>
-                    <p class="advantages__item-text">
+                    <p class="advantage__text">
                       Шок-заморозка сразу после вылова и соблюдение холодовой
                       цепи до вашей двери.
                     </p>
                   </div>
                 </li>
                 <li class="advantages__item advantages__item--red">
-                  <div class="advantages__item-body">
-                    <h3 class="advantages__item-title">
+                  <div class="advantage">
+                    <h3 class="advantage__title">
                       Бесплатная доставка от&nbsp;[X] кг
                     </h3>
-                    <p class="advantages__item-text">
+                    <p class="advantage__text">
                       Суммируйте позиции и получайте заказ без доплат по городу.
                     </p>
                   </div>
                 </li>
                 <li class="advantages__item advantages__item--blue-light">
-                  <div class="advantages__item-body">
-                    <h3 class="advantages__item-title">
-                      Проверено покупателями
-                    </h3>
-                    <p class="advantages__item-text">
+                  <div class="advantage">
+                    <h3 class="advantage__title">Проверено покупателями</h3>
+                    <p class="advantage__text">
                       4.9★ на основе отзывов — реальные оценки и фотографии
                       клиентов.
                     </p>
@@ -328,75 +325,75 @@
               </div>
               <ul class="catalog__list catalog-list">
                 <li
-                  class="catalog-list__item"
+                  class="catalog-list__item product"
                   data-category="caviar"
                   data-price="5000"
                   data-name="Икра ежа на меду"
                 >
                   <img
                     src="./assets/img/photo/honey.png"
-                    class="catalog-list__item-img"
+                    class="product__img"
                     alt=""
                   />
-                  <div class="catalog-list__item-content">
-                    <h5 class="catalog-list__item-title">Икра ежа на меду</h5>
-                    <i class="catalog-list__item-weight">Вес: 50гр.</i>
-                    <strong class="catalog-list__item-price">5 000 Р</strong>
-                    <div class="catalog-list__item-ordering ordering">
+                  <div class="product__content">
+                    <h5 class="product__title">Икра ежа на меду</h5>
+                    <i class="product__weight">Вес: 50гр.</i>
+                    <strong class="product__price">5 000 Р</strong>
+                    <div class="product__ordering ordering">
                       <div class="ordering__controls">
-                        <button class="ordering__controls-more-btn">-</button>
-                        <div class="quantity">0</div>
-                        <button class="ordering__controls-less-btn">+</button>
+                        <button class="ordering__more">-</button>
+                        <div class="ordering__quantity">0</div>
+                        <button class="ordering__less">+</button>
                       </div>
                       <button class="ordering__btn button">Заказать</button>
                     </div>
                   </div>
                 </li>
                 <li
-                  class="catalog-list__item"
+                  class="catalog-list__item product"
                   data-category="frozen-fish"
                   data-price="1000"
                   data-name="Икра ежа на меду"
                 >
                   <img
                     src="./assets/img/photo/honey-2.png"
-                    class="catalog-list__item-img"
+                    class="product__img"
                     alt=""
                   />
-                  <div class="catalog-list__item-content">
-                    <h5 class="catalog-list__item-title">Икра ежа на меду</h5>
-                    <i class="catalog-list__item-weight">Вес: 10гр.</i>
-                    <strong class="catalog-list__item-price">1 000 Р</strong>
-                    <div class="catalog-list__item-ordering ordering">
+                  <div class="product__content">
+                    <h5 class="product__title">Икра ежа на меду</h5>
+                    <i class="product__weight">Вес: 10гр.</i>
+                    <strong class="product__price">1 000 Р</strong>
+                    <div class="product__ordering ordering">
                       <div class="ordering__controls">
-                        <button class="ordering__controls-more-btn">-</button>
+                        <button class="ordering__more">-</button>
                         <div class="quantity">1</div>
-                        <button class="ordering__controls-less-btn">+</button>
+                        <button class="ordering__less">+</button>
                       </div>
                       <button class="ordering__btn button">Заказать</button>
                     </div>
                   </div>
                 </li>
                 <li
-                  class="catalog-list__item"
+                  class="catalog-list__item product"
                   data-category="shrimp"
                   data-price="5000"
                   data-name="Икра кеты"
                 >
                   <img
                     src="./assets/img/photo/caviar-on-bread.png"
-                    class="catalog-list__item-img"
+                    class="product__img"
                     alt=""
                   />
-                  <div class="catalog-list__item-content">
-                    <h5 class="catalog-list__item-title">Икра кеты</h5>
-                    <i class="catalog-list__item-weight">Вес от 50гр.</i>
-                    <strong class="catalog-list__item-price">5 000 Р</strong>
-                    <div class="catalog-list__item-ordering ordering">
+                  <div class="product__content">
+                    <h5 class="product__title">Икра кеты</h5>
+                    <i class="product__weight">Вес от 50гр.</i>
+                    <strong class="product__price">5 000 Р</strong>
+                    <div class="product__ordering ordering">
                       <div class="ordering__controls">
-                        <button class="ordering__controls-more-btn">-</button>
+                        <button class="ordering__more">-</button>
                         <div class="quantity">0</div>
-                        <button class="ordering__controls-less-btn">+</button>
+                        <button class="ordering__less">+</button>
                       </div>
                       <button class="ordering__btn button">Заказать</button>
                     </div>
@@ -411,64 +408,64 @@
             <div class="assortment__inner">
               <h2 class="assortment__title title">ассортимент</h2>
               <ul class="assortment__list">
-                <li class="assortment__item">
-                  <h5 class="assortment__item-title">Икра</h5>
+                <li class="assortment__item assortment-item">
+                  <h5 class="assortment-item__title">Икра</h5>
                   <img src="./assets/img/photo/caviar.png" alt="" />
                 </li>
-                <li class="assortment__item">
-                  <h5 class="assortment__item-title">Замороженная рыба</h5>
+                <li class="assortment__item assortment-item">
+                  <h5 class="assortment-item__title">Замороженная рыба</h5>
                   <img src="./assets/img/photo/fish.png" alt="" />
                 </li>
-                <li class="assortment__item">
-                  <h5 class="assortment__item-title">Полуфабрикаты</h5>
+                <li class="assortment__item assortment-item">
+                  <h5 class="assortment-item__title">Полуфабрикаты</h5>
                   <img src="./assets/img/photo/semi-finished.png" alt="" />
                 </li>
-                <li class="assortment__item">
-                  <h5 class="assortment__item-title">Крабы</h5>
+                <li class="assortment__item assortment-item">
+                  <h5 class="assortment-item__title">Крабы</h5>
                   <img src="./assets/img/photo/crab.png" alt="" />
                 </li>
-                <li class="assortment__item">
-                  <h5 class="assortment__item-title">Креветки</h5>
+                <li class="assortment__item assortment-item">
+                  <h5 class="assortment-item__title">Креветки</h5>
                   <img src="./assets/img/photo/shrimp.png" alt="" />
                 </li>
-                <li class="assortment__item">
-                  <h5 class="assortment__item-title">Копченая-солёная рыба</h5>
+                <li class="assortment__item assortment-item">
+                  <h5 class="assortment-item__title">Копченая-солёная рыба</h5>
                   <img src="./assets/img/photo/salted-fish.png" alt="" />
                 </li>
-                <li class="assortment__item">
-                  <h5 class="assortment__item-title">
+                <li class="assortment__item assortment-item">
+                  <h5 class="assortment-item__title">
                     Сушеная-копчёная продукция
                   </h5>
                   <img src="./assets/img/photo/dried-products.png" alt="" />
                 </li>
-                <li class="assortment__item">
-                  <h5 class="assortment__item-title">Моллюски</h5>
+                <li class="assortment__item assortment-item">
+                  <h5 class="assortment-item__title">Моллюски</h5>
                   <img src="./assets/img/photo/shellfish.png" alt="" />
                 </li>
-                <li class="assortment__item">
-                  <h5 class="assortment__item-title">Прессервы</h5>
+                <li class="assortment__item assortment-item">
+                  <h5 class="assortment-item__title">Прессервы</h5>
                   <img src="./assets/img/photo/pressserves.png" alt="" />
                 </li>
-                <li class="assortment__item">
-                  <h5 class="assortment__item-title">
+                <li class="assortment__item assortment-item">
+                  <h5 class="assortment-item__title">
                     Консервированная продукция
                   </h5>
                   <img src="./assets/img/photo/herring.png" alt="" />
                 </li>
-                <li class="assortment__item">
-                  <h5 class="assortment__item-title">Сопутствующие товары</h5>
+                <li class="assortment__item assortment-item">
+                  <h5 class="assortment-item__title">Сопутствующие товары</h5>
                   <img src="./assets/img/photo/related-products.png" alt="" />
                 </li>
-                <li class="assortment__item">
-                  <h5 class="assortment__item-title">Соусы и специи</h5>
+                <li class="assortment__item assortment-item">
+                  <h5 class="assortment-item__title">Соусы и специи</h5>
                   <img src="./assets/img/photo/souses.png" alt="" />
                 </li>
-                <li class="assortment__item">
-                  <h5 class="assortment__item-title">Напитки</h5>
+                <li class="assortment__item assortment-item">
+                  <h5 class="assortment-item__title">Напитки</h5>
                   <img src="./assets/img/photo/souses.png" alt="" />
                 </li>
-                <li class="assortment__item">
-                  <h5 class="assortment__item-title">БАДЫ</h5>
+                <li class="assortment__item assortment-item">
+                  <h5 class="assortment-item__title">БАДЫ</h5>
                   <img src="./assets/img/photo/honey.png" alt="" />
                 </li>
               </ul>
@@ -480,58 +477,58 @@
             <div class="delivery__inner">
               <h2 class="delivery__title title">Доставка и оплата</h2>
               <ul class="delivery__list">
-                <li class="delivery__item">
-                  <div class="delivery__img-body">
+                <li class="delivery__item delivery-item">
+                  <div class="delivery__img">
                     <img src="./assets/img/icons/snowflake.svg" alt="" />
                   </div>
-                  <h4 class="delivery__item-title">Сохраняем свежесть</h4>
-                  <p class="delivery__item-text">
+                  <h4 class="delivery-item__title">Сохраняем свежесть</h4>
+                  <p class="delivery-item__text">
                     Шоковая заморозка сразу после вылова
                   </p>
                 </li>
-                <li class="delivery__item">
-                  <div class="delivery__img-body">
+                <li class="delivery__item delivery-item">
+                  <div class="delivery__img">
                     <img src="./assets/img/icons/shopping-bag.svg" alt="" />
                   </div>
-                  <h4 class="delivery__item-title">Надёжная упаковка</h4>
-                  <p class="delivery__item-text">
+                  <h4 class="delivery-item__title">Надёжная упаковка</h4>
+                  <p class="delivery-item__text">
                     Термоупаковка и хладоэлементы, быстрая логистика
                   </p>
                 </li>
-                <li class="delivery__item">
-                  <div class="delivery__img-body">
+                <li class="delivery__item delivery-item">
+                  <div class="delivery__img">
                     <img src="./assets/img/icons/plane.svg" alt="" />
                   </div>
-                  <h4 class="delivery__item-title">Доставка по рф</h4>
-                  <p class="delivery__item-text">
+                  <h4 class="delivery-item__title">Доставка по рф</h4>
+                  <p class="delivery-item__text">
                     Доставка по Владивостоку, авиа‑доставка Москве
                     и&nbsp;регионам, оптовые заказы
                   </p>
                 </li>
-                <li class="delivery__item">
-                  <div class="delivery__img-body">
+                <li class="delivery__item delivery-item">
+                  <div class="delivery__img">
                     <img src="./assets/img/icons/payment.svg" alt="" />
                   </div>
-                  <h4 class="delivery__item-title">Гибкая оплата</h4>
-                  <p class="delivery__item-text">
+                  <h4 class="delivery-item__title">Гибкая оплата</h4>
+                  <p class="delivery-item__text">
                     Наличные при получении, перевод на карту, оплата через
                     терминал или QR-кодом
                   </p>
                 </li>
-                <li class="delivery__item">
-                  <div class="delivery__img-body">
+                <li class="delivery__item delivery-item">
+                  <div class="delivery__img">
                     <img src="./assets/img/icons/storefront.svg" alt="" />
                   </div>
-                  <h4 class="delivery__item-title">
+                  <h4 class="delivery-item__title">
                     Ежедневно <time datetime="10:00+10:00">10:00</time>–<time
-                      datetime="24:00+10:00"
+                      datetime="00:00+10:00"
                       >24:00</time
                     >
                   </h4>
-                  <p class="delivery__item-text">
+                  <p class="delivery-item__text">
                     Принимаем и обрабатываем заказы с
                     <time datetime="10:00+10:00">10:00</time> до
-                    <time datetime="24:00+10:00">24:00</time>
+                    <time datetime="00:00+10:00">24:00</time>
                     (Владивосток)
                   </p>
                 </li>
@@ -544,9 +541,9 @@
             <div class="faq__inner">
               <h2 class="faq__title title">частые вопросы</h2>
               <ul class="faq__list">
-                <li class="faq__item">
-                  <a href="#" class="faq__item-control">
-                    <h4 class="faq__item-title">
+                <li class="faq__item faq-item">
+                  <a href="#" class="faq-item__control">
+                    <h4 class="faq-item__title">
                       Как доставляются продукты от 'Краб & Креветка'?
                     </h4>
                     <svg
@@ -572,7 +569,7 @@
                       />
                     </svg>
                   </a>
-                  <div class="faq__item-content">
+                  <div class="faq-item__content">
                     <p>
                       Если нужное есть на складе — отгружаем в тот же день.
                       <br />
@@ -580,9 +577,9 @@
                     </p>
                   </div>
                 </li>
-                <li class="faq__item">
-                  <a href="#" class="faq__item-control">
-                    <h4 class="faq__item-title">
+                <li class="faq__item faq-item">
+                  <a href="#" class="faq-item__control">
+                    <h4 class="faq-item__title">
                       Как можно убедиться в качестве продуктов 'Краб &
                       Креветка'?
                     </h4>
@@ -609,7 +606,7 @@
                       />
                     </svg>
                   </a>
-                  <div class="faq__item-content">
+                  <div class="faq-item__content">
                     <p>
                       Если нужное есть на складе — отгружаем в тот же день.
                       <br />
@@ -617,9 +614,9 @@
                     </p>
                   </div>
                 </li>
-                <li class="faq__item">
-                  <a href="#" class="faq__item-control">
-                    <h4 class="faq__item-title">
+                <li class="faq__item faq-item">
+                  <a href="#" class="faq-item__control">
+                    <h4 class="faq-item__title">
                       Как можно описать соевый соус?
                     </h4>
                     <svg
@@ -645,7 +642,7 @@
                       />
                     </svg>
                   </a>
-                  <div class="faq__item-content">
+                  <div class="faq-item__content">
                     <p>
                       Если нужное есть на складе — отгружаем в тот же день.
                       <br />
@@ -653,9 +650,9 @@
                     </p>
                   </div>
                 </li>
-                <li class="faq__item">
-                  <a href="#" class="faq__item-control">
-                    <h4 class="faq__item-title">Что такое медведка шримс?</h4>
+                <li class="faq__item faq-item">
+                  <a href="#" class="faq-item__control">
+                    <h4 class="faq-item__title">Что такое медведка шримс?</h4>
                     <svg
                       width="42"
                       height="42"
@@ -679,7 +676,7 @@
                       />
                     </svg>
                   </a>
-                  <div class="faq__item-content">
+                  <div class="faq-item__content">
                     <p>
                       Если нужное есть на складе — отгружаем в тот же день.
                       <br />
@@ -687,9 +684,9 @@
                     </p>
                   </div>
                 </li>
-                <li class="faq__item">
-                  <a href="#" class="faq__item-control">
-                    <h4 class="faq__item-title">Какие формы оплаты?</h4>
+                <li class="faq__item faq-item">
+                  <a href="#" class="faq-item__control">
+                    <h4 class="faq-item__title">Какие формы оплаты?</h4>
                     <svg
                       width="42"
                       height="42"
@@ -713,7 +710,7 @@
                       />
                     </svg>
                   </a>
-                  <div class="faq__item-content">
+                  <div class="faq-item__content">
                     <p>
                       Если нужное есть на складе — отгружаем в тот же день.
                       <br />
