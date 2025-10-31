@@ -17,6 +17,15 @@
       <header>
         <div class="container">
           <div class="header__inner">
+            <a
+              href="/"
+              aria-label="Логотип компании с ссылкой на главную страницу"
+            >
+              <img
+                src="./assets/img/logo.png"
+                alt="Логотип компании Краб&Креветка"
+              />
+            </a>
             <menu class="header__menu menu">
               <li class="menu__item">
                 <a href="#" class="menu__link">
@@ -341,9 +350,19 @@
                     <strong class="product__price">5 000 Р</strong>
                     <div class="product__ordering ordering">
                       <div class="ordering__controls">
-                        <button class="ordering__more">-</button>
+                        <button
+                          class="ordering__less"
+                          aria-label="Кнопка `убавить количество на одну единицу товара`"
+                        >
+                          -
+                        </button>
                         <div class="ordering__quantity">0</div>
-                        <button class="ordering__less">+</button>
+                        <button
+                          class="ordering__more"
+                          aria-label="Кнопка `добавить количество на одну единицу товара`"
+                        >
+                          +
+                        </button>
                       </div>
                       <button class="ordering__btn button">Заказать</button>
                     </div>
