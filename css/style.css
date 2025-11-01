@@ -373,11 +373,11 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  max-width: 300px;
+  min-width: 400px;
 }
 
 .search-container svg {
-  margin-left: 18px;
+  margin-left: 30px;
 }
 
 .search-input {
@@ -428,24 +428,24 @@
 
 .sort-select-wrapper {
   position: relative;
-  display: inline-block;
-  min-width: 342px;
+  min-width: 330px;
 }
 
 .sort-select-wrapper::after {
+  content: "";
   position: absolute;
-  content: "▼";
-  right: 25%;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 18px;
-  color: var(--сolor-blue-dark);
-  pointer-events: none;
+  top: 18px;
+  right: 24px;
+  display: block;
+  background-image: url(../assets/img/icons/sort-arrow-down.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  aspect-ratio: 1;
 }
 
 .sort-select {
   width: 100%;
-  padding: 18px;
+  padding: 18px 24px 18px 30px;
   border-radius: var(--border-radius);
   font-size: 18px;
   font-weight: 600;
