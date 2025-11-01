@@ -849,6 +849,43 @@
             </div>
           </div>
         </section>
+        <section class="main__order order">
+          <div class="container">
+            <div class="order__inner">
+              <h2 class="order__title title">хотите сделать заказ?</h2>
+              <p class="order__subtitle">
+                Оставьте заявку и мы перезвоним вам в ближайшее рабочее время!
+                Мы работаем с <time datetime="10:00+10:00">10:00</time> до
+                <time datetime="00:00+10:00">24:00</time> по Владивостоку (Мск
+                +7)
+              </p>
+              <form
+                action="mailto:drv-dev@mail.ru"
+                class="order__form"
+                enctype="text/plain"
+              >
+                <label>
+                  <input type="text" required placeholder="Введите ваше имя" />
+                </label>
+                <label>
+                  <input
+                    type="tel"
+                    required
+                    placeholder="Введите ваш номер телефона"
+                  />
+                </label>
+                <button class="form__button button">Открыть каталог</button>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox" />
+                  <span
+                    >Нажимая на кнопку “Оставить заявку”, вы даёте согласие на
+                    обработку <a href="#">персональных данных</a></span
+                  >
+                </label>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
       <footer></footer>
     </div>
@@ -857,6 +894,7 @@
     <script src="./js/filter-category.js"></script>
     <script src="./js/filter-search.js"></script>
     <script src="./js/filter-sort.js"></script>
+    <script src="./js/inputmask.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
