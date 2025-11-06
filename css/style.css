@@ -849,3 +849,72 @@
   font-weight: 400;
   font-size: 20px;
 }
+
+/* Стили для секции Order */
+.order {
+  background-color: var(--сolor-blue-dark);
+}
+
+.main__order {
+  padding: 100px 120px;
+}
+
+.order__inner {
+  padding: 50px 20px 55px 153px;
+  border-radius: var(--border-radius);
+  background-color: var(--сolor-blue-light);
+}
+
+.order__title {
+  margin-bottom: 31px;
+}
+
+.order__subtitle {
+  max-width: 578px;
+  margin-bottom: 32px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.order__form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 20px;
+  max-width: 935px;
+}
+
+.form__field {
+  min-width: 285px;
+  padding: 25px 13px;
+  border: 1px solid #b8b8b8;
+  border-radius: 5px;
+}
+
+.form__field::placeholder {
+  font-size: 15px;
+  font-weight: 500;
+  color: #061b48;
+}
+
+.form__button {
+  padding: 24px 77px;
+  color: var(--color-white);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #061b48;
+}
+
+.checkbox-label a {
+  text-decoration: underline;
+}
+
+.form__checkbox {
+  width: 25px;
+  aspect-ratio: 1;
+}

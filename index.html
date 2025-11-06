@@ -861,22 +861,28 @@
               </p>
               <form
                 action="mailto:drv-dev@mail.ru"
-                class="order__form"
+                class="order__form form"
                 enctype="text/plain"
               >
                 <label>
-                  <input type="text" required placeholder="Введите ваше имя" />
+                  <input
+                    type="text"
+                    required
+                    placeholder="Введите ваше имя"
+                    class="form__field"
+                  />
                 </label>
                 <label>
                   <input
                     type="tel"
                     required
                     placeholder="Введите ваш номер телефона"
+                    class="form__field"
                   />
                 </label>
                 <button class="form__button button">Открыть каталог</button>
                 <label class="checkbox-label">
-                  <input type="checkbox" class="checkbox" />
+                  <input type="checkbox" class="form__checkbox" />
                   <span
                     >Нажимая на кнопку “Оставить заявку”, вы даёте согласие на
                     обработку <a href="#">персональных данных</a></span
