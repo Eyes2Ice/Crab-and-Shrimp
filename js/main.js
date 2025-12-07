@@ -170,4 +170,18 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".testimonials__prev",
     },
   });
+
+  // ================Слайдер партнёров=====================
+  new Swiper(".partners__slider", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: false,
+    centeredSlides: false,
+    watchOverflow: true,
+
+    navigation: {
+      nextEl: ".partners__next",
+      prevEl: ".partners__prev",
+    },
+  });
 });

@@ -1027,3 +1027,41 @@
   width: 25px;
   aspect-ratio: 1;
 }
+
+/* Стили для секции Partners */
+.partners {
+  background-color: var(--сolor-blue-dark);
+}
+
+.partners__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 100px;
+}
+
+.partners__title {
+  margin-bottom: 80px;
+  color: var(--color-white);
+}
+
+.partners__slider {
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.partners__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 387px;
+  height: 198px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+}
+
+.partners__nav {
+  display: flex;
+  gap: 95px;
+}
