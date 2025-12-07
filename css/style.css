@@ -1,6 +1,7 @@
 @import url("./fonts.css");
 @import url("./vars.css");
 @import url("./global.css");
+@import url("./swiper-bundle.min.css");
 
 /* Cтили для hero секции */
 .hero {
@@ -788,6 +789,46 @@
   font-weight: 400;
 }
 
+/* Стили для секции отзывов */
+.testimonials {
+  background-color: var(--сolor-blue-dark);
+}
+
+.testimonials__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 100px;
+}
+
+.testimonials__title {
+  margin-bottom: 70px;
+  color: var(--сolor-blue-light);
+}
+
+.testimonials__slider {
+  margin-bottom: 44px;
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.testimonials__item {
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+
+.testimonials__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--border-radius);
+}
+
+.testimonials__nav {
+  display: flex;
+  gap: 95px;
+}
 /* Стили для FAQ секции */
 .faq {
   background-color: var(--color-white-bg);

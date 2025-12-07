@@ -156,4 +156,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const inputsTel = document.querySelectorAll('input[type="tel"]');
   let im = new Inputmask("+7 (999) 999-99-99");
   im.mask(inputsTel);
+
+  // ================Слайдер отзывов=====================
+  const swiper = new Swiper(".testimonials__slider", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: false,
+    centeredSlides: false,
+    watchOverflow: true,
+
+    navigation: {
+      nextEl: ".testimonials__next",
+      prevEl: ".testimonials__prev",
+    },
+  });
 });
