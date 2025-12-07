@@ -891,6 +891,74 @@
   font-size: 20px;
 }
 
+/* Стили для discount секции */
+.discount {
+  background-color: var(--color-white-bg);
+}
+
+.discount__inner {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 100px;
+}
+
+.discount__about {
+  max-width: 692px;
+  padding: 81px 65px 159px 42px;
+  background: var(--color-red) url("../assets/img/background/discount-crab.svg")
+    right bottom / 45% no-repeat;
+  border-radius: 15px;
+}
+
+.discount__title {
+  margin-bottom: 60px;
+  font-size: 45px;
+  line-height: 1.4;
+  color: var(--color-white);
+}
+
+.discount__subtitle {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-white);
+}
+
+.discount__action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 81px 35px 52px;
+  background-color: var(--сolor-blue-light);
+  border-radius: 15px;
+}
+
+.discount__text {
+  margin-bottom: 39px;
+  font-size: 32px;
+  line-height: 109%;
+  text-align: center;
+}
+
+.discount__img {
+  margin-bottom: 18px;
+  box-shadow: -8px -7px 23px 0 rgba(41, 64, 71, 0.1),
+    -32px -28px 42px 0 rgba(41, 64, 71, 0.09),
+    -71px -62px 57px 0 rgba(41, 64, 71, 0.05),
+    -126px -111px 67px 0 rgba(41, 64, 71, 0.01),
+    -197px -173px 73px 0 rgba(41, 64, 71, 0);
+  border-radius: 15px;
+}
+
+.discount__btn {
+  padding: 29px 36px;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-red);
+}
+
 /* Стили для секции Order */
 .order {
   background-color: var(--сolor-blue-dark);
