@@ -169,6 +169,14 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: ".testimonials__next",
       prevEl: ".testimonials__prev",
     },
+
+    autoplay: {
+      delay: 2000,
+    },
+
+    speed: 600,
+
+    pauseOnInteraction: true,
   });
 
   // ================Слайдер партнёров=====================
@@ -183,5 +191,35 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: ".partners__next",
       prevEl: ".partners__prev",
     },
+
+    autoplay: {
+      delay: 2000,
+    },
+
+    speed: 600,
+
+    pauseOnInteraction: true,
+  });
+
+  // ================Слайдер магазинов=====================
+  new Swiper(".places__slider", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: false,
+    centeredSlides: false,
+    watchOverflow: true,
+
+    navigation: {
+      nextEl: ".places__next",
+      prevEl: ".places__prev",
+    },
+
+    autoplay: {
+      delay: 2000,
+    },
+
+    speed: 600,
+
+    pauseOnInteraction: true,
   });
 });
