@@ -1,6 +1,7 @@
 @import url("./vars.css");
 
 body {
+  background-color: var(--сolor-blue-dark);
   font-family: "Involve";
   font-weight: 600;
   font-size: 18px;
@@ -23,18 +24,6 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-}
-
-header {
-  transition: var(--transition);
-}
-
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
 }
 
 .main {
@@ -61,6 +50,17 @@ header {
   font-weight: 500;
 }
 
+/* Стили для шапки */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  transition: var(--transition);
+}
+
 .header__inner {
   display: flex;
   align-items: center;
@@ -70,13 +70,13 @@ header {
   letter-spacing: 0;
 }
 
-.menu {
+.header-nav {
   display: flex;
   gap: 20px;
   font-size: 16px;
 }
 
-.menu__link {
+.header-nav__link {
   padding: 6px 1px;
 }
 
@@ -107,6 +107,83 @@ header {
   color: var(--color-white);
 }
 
+/* Стили для подвала */
+
+footer {
+  padding: 82px 120px 38px;
+  background-color: var(--color-red);
+  border-radius: 50px;
+}
+
+.footer__inner {
+  color: var(--color-white);
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-catalog__title,
+.footer-menu__title,
+.footer-contact__title,
+.footer-places__title {
+  margin-bottom: 40px;
+  font-size: 35px;
+}
+
+.footer-catalog__list,
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 15px;
+}
+
+.footer-contact__number {
+  font-family: "Pribambas";
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.footer-contact__places {
+  margin-top: 50px;
+}
+
+.footer-places__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 47px;
+  padding-top: 20px;
+  border-top: 1px solid #d2d0d0;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.footer__details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer__policy {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 600;
+}
+
+/* Скроллбар */
 *::-webkit-scrollbar {
   width: 15px;
 }

@@ -26,9 +26,9 @@
                 alt="Логотип компании Краб&Креветка"
               />
             </a>
-            <menu class="header__menu menu">
-              <li class="menu__item">
-                <a href="#" class="menu__link">
+            <nav class="header-nav">
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">
                   Каталог
                   <svg
                     width="10"
@@ -44,37 +44,39 @@
                   </svg>
                 </a>
               </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Доставка</a>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Доставка</a>
               </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Магазины</a>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Магазины</a>
               </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Отзывы</a>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Отзывы</a>
               </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Контакты</a>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Контакты</a>
               </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">FAQ</a>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">FAQ</a>
               </li>
-            </menu>
-            <address class="header__contacts contacts">
+            </nav>
+            <div class="header__contacts contacts">
               <div class="contacts__info">
-                <a href="tel:89245274609" class="contacts__number"
-                  >8 (924) 527-46-09
-                </a>
-                <p>
+                <address>
+                  <a href="tel:89245274609" class="contacts__number"
+                    >8 (924) 527-46-09
+                  </a>
+                </address>
+                <address>
                   Часы работы:
                   <time datetime="10:00+10:00">10:00</time>–<time
                     datetime="00:00+10:00"
                     >24:00</time
                   >
-                </p>
+                </address>
               </div>
               <a href="#" class="header__btn button">Написать в WhatsApp</a>
-            </address>
+            </div>
           </div>
         </div>
       </header>
@@ -1100,17 +1102,17 @@
                   <li class="places__item place swiper-slide">
                     <div class="place__about">
                       <h4 class="place__title title">Розничная продажа</h4>
-                      <address class="place__about">
-                        <p>
+                      <div class="place__about">
+                        <address>
                           Проспект Красного Знамени, 37(кольцо Инструментального
                           завода)
-                        </p>
-                        <p>
+                        </address>
+                        <address>
                           Ежедневно с
                           <time datetime="10:00+10:00">10:00</time> до
                           <time datetime="00:00+10:00">24:00</time>
-                        </p>
-                      </address>
+                        </address>
+                      </div>
                       <div class="place__numbers">
                         <a href="tel:89940046900">+7 (994) 004-69-00</a>
                         <a href="tel:84232666004">+7 (423) 2-666-004</a>
@@ -1129,17 +1131,17 @@
                   <li class="places__item place swiper-slide">
                     <div class="place__about">
                       <h4 class="place__title title">Розничная продажа</h4>
-                      <address class="place__about">
-                        <p>
+                      <div class="place__about">
+                        <address>
                           Проспект Красного Знамени, 37(кольцо Инструментального
                           завода)
-                        </p>
-                        <p>
+                        </address>
+                        <address>
                           Ежедневно с
                           <time datetime="10:00+10:00">10:00</time> до
                           <time datetime="00:00+10:00">24:00</time>
-                        </p>
-                      </address>
+                        </address>
+                      </div>
                       <div class="place__numbers">
                         <a href="tel:89940046900">+7 (994) 004-69-00</a>
                         <a href="tel:84232666004">+7 (423) 2-666-004</a>
@@ -1158,17 +1160,17 @@
                   <li class="places__item place swiper-slide">
                     <div class="place__about">
                       <h4 class="place__title title">Розничная продажа</h4>
-                      <address class="place__about">
-                        <p>
+                      <div class="place__about">
+                        <address>
                           Проспект Красного Знамени, 37(кольцо Инструментального
                           завода)
-                        </p>
-                        <p>
+                        </address>
+                        <address>
                           Ежедневно с
                           <time datetime="10:00+10:00">10:00</time> до
                           <time datetime="00:00+10:00">24:00</time>
-                        </p>
-                      </address>
+                        </address>
+                      </div>
                       <div class="place__numbers">
                         <a href="tel:89940046900">+7 (994) 004-69-00</a>
                         <a href="tel:84232666004">+7 (423) 2-666-004</a>
@@ -1323,7 +1325,154 @@
           </div>
         </section>
       </main>
-      <footer></footer>
+      <footer>
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__top">
+              <div class="footer__catalog footer-catalog">
+                <h4 class="footer-catalog__title title">каталог</h4>
+                <ul class="footer-catalog__list">
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Икра</a>
+                  </li>
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link"
+                      >Замороженная рыба</a
+                    >
+                  </li>
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Крабы</a>
+                  </li>
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Креветки</a>
+                  </li>
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Полуфабрикаты</a>
+                  </li>
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link"
+                      >Копченая-солёная рыба</a
+                    >
+                  </li>
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Моллюски</a>
+                  </li>
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link"
+                      >Сушеная-копчёная продукция</a
+                    >
+                  </li>
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Прессервы</a>
+                  </li>
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link"
+                      >Консервированная продукция</a
+                    >
+                  </li>
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link"
+                      >Сопутствующие товары</a
+                    >
+                  </li>
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Соусы и специи</a>
+                  </li>
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Напитки</a>
+                  </li>
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">БАДЫ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__menu">
+                <h4 class="footer-menu__title title">навигация</h4>
+                <nav class="footer-nav">
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Доставка</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Адреса магазинов</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Отзывы</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">FAQ</a>
+                  </li>
+                </nav>
+              </div>
+              <div class="footer__contact footer-contact">
+                <h4 class="footer-contact__title title">контакты</h4>
+                <div class="footer-contact__about">
+                  <address>
+                    <a href="tel:89245274609" class="footer-contact__number"
+                      >8 (924) 527-46-09</a
+                    >
+                  </address>
+                  <div class="footer-contact__places footer-places">
+                    <h4 class="footer-places__title title">адреса магазинов</h4>
+                    <ul class="footer-places__list">
+                      <li class="footer-places__item">
+                        <address>
+                          г. Владивосток,
+                          <b>Проспект Красного Знамени, 37</b>
+                          <br />
+                          Ежедневно с
+                          <time datetime="10:00+10:00">10:00</time> до
+                          <time datetime="00:00+10:00">24:00</time>
+                        </address>
+                      </li>
+                      <li class="footer-places__item">
+                        <address>
+                          г. Владивосток, <b>Народный проспект, д. 6, ст. 1</b>
+                          <br />
+                          Ежедневно с
+                          <time datetime="09:00+10:00">09:00</time> до
+                          <time datetime="20:00+10:00">20:00</time>
+                        </address>
+                      </li>
+                      <li class="footer-places__item">
+                        <address>
+                          г. Владивосток, <b>Улица Маковского, 56а, ст. 9 </b>
+                          <br />
+                          Ежедневно с
+                          <time datetime="09:00+10:00">09:00</time> до
+                          <time datetime="20:00+10:00">20:00</time>
+                        </address>
+                      </li>
+                      <li class="footer-places__item">
+                        <address>
+                          г. Владивосток, <b>Морская улица, 1Б, ст. 22</b>
+                          <br />
+                          Ежедневно с
+                          <time datetime="09:00+10:00">09:00</time> до
+                          <time datetime="20:00+10:00">20:00</time>
+                        </address>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <ul class="footer__details">
+                <li>2025, ИП</li>
+                <li>ИНН:</li>
+                <li>ОГРНИП:</li>
+              </ul>
+              <ul class="footer__policy">
+                <li><a href="#">Все права защищены</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+              </ul>
+              <p class="footer__dev-by dev-by">
+                Развитие и продвижение сайта - DARE
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="./js/filter-manager.js"></script>
     <script src="./js/filter-price.js"></script>

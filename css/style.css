@@ -83,6 +83,7 @@
 /* Cтили для advantages секции */
 .advantages {
   position: relative;
+  background-color: var(--color-white);
 }
 
 .advantages::after {

@@ -183,7 +183,6 @@ document.addEventListener("DOMContentLoaded", function () {
   new Swiper(".partners__slider", {
     slidesPerView: 3,
     spaceBetween: 20,
-    loop: false,
     centeredSlides: false,
     watchOverflow: true,
 
@@ -205,7 +204,6 @@ document.addEventListener("DOMContentLoaded", function () {
   new Swiper(".places__slider", {
     slidesPerView: 1,
     spaceBetween: 20,
-    loop: false,
     centeredSlides: false,
     watchOverflow: true,
 
@@ -227,7 +225,6 @@ document.addEventListener("DOMContentLoaded", function () {
   new Swiper(".charity__slider", {
     slidesPerView: 1,
     spaceBetween: 20,
-    loop: false,
     centeredSlides: false,
     watchOverflow: true,
 
@@ -236,12 +233,12 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".charity__prev",
     },
 
-      autoplay: {
-        delay: 2000,
-      },
+    autoplay: {
+      delay: 2000,
+    },
 
-      speed: 600,
+    speed: 600,
 
-      pauseOnInteraction: true,
+    pauseOnInteraction: true,
   });
 });
