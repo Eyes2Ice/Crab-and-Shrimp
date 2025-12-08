@@ -1075,6 +1075,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 15px;
   padding-bottom: 100px;
 }
 
@@ -1132,4 +1133,42 @@
 .places__nav {
   display: flex;
   gap: 95px;
+}
+
+/* Стили для секции Charity */
+.charity {
+  padding-block: 100px;
+  background-color: var(--color-white-bg);
+}
+
+.charity__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 72px 41px 127px;
+  background-color: var(--сolor-blue-light);
+  border-radius: 15px;
+}
+
+.charity__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 37px;
+  max-width: 577px;
+  font-weight: 400;
+}
+
+.charity__slider {
+  display: flex;
+  gap: 22px;
+}
+
+.charity__prev,
+.charity__next {
+  z-index: 2;
+}
+
+.charity__list {
+  max-width: 386px;
 }

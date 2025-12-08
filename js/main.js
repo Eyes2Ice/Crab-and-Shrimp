@@ -222,4 +222,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
     pauseOnInteraction: true,
   });
+
+  // ================Слайдер благотватиретльность=====================
+  new Swiper(".charity__slider", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: false,
+    centeredSlides: false,
+    watchOverflow: true,
+
+    navigation: {
+      nextEl: ".charity__next",
+      prevEl: ".charity__prev",
+    },
+
+      autoplay: {
+        delay: 2000,
+      },
+
+      speed: 600,
+
+      pauseOnInteraction: true,
+  });
 });
