@@ -962,7 +962,21 @@
 
 /* Стили для секции Order */
 .order {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  overflow: visible;
   background-color: var(--сolor-blue-dark);
+}
+
+.order::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../assets/img/background/order-bg.png") center / cover
+    no-repeat;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .main__order {
@@ -970,6 +984,8 @@
 }
 
 .order__inner {
+  position: relative;
+  z-index: 1;
   padding: 50px 20px 55px 153px;
   border-radius: var(--border-radius);
   background-color: var(--сolor-blue-light);
@@ -977,6 +993,7 @@
 
 .order__title {
   margin-bottom: 31px;
+  font-size: 55px;
 }
 
 .order__subtitle {

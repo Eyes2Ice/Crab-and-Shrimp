@@ -161,7 +161,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".testimonials__slider", {
     slidesPerView: 1,
     spaceBetween: 0,
-    loop: false,
     centeredSlides: false,
     watchOverflow: true,
 

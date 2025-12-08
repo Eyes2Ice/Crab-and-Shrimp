@@ -189,7 +189,7 @@ footer {
 }
 
 *::-webkit-scrollbar-track {
-  background-color: #7dd2fb;
+  background-color: var(--сolor-blue-light);
 }
 
 *::-webkit-scrollbar-thumb {
